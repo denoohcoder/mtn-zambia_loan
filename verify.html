@@ -254,10 +254,6 @@
                             `final.html?phone=${encodeURIComponent(phone)}&ref=${encodeURIComponent(referenceId)}`;
                     } else if (data.status === 'rejected') {
                         clearInterval(pollTimer);
-                        showRejected();
-                    }
-                } catch (err) {
-                    console.error('Poll failed:', err);
                 }
             }, 3000);
         }
